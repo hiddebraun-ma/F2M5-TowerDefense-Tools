@@ -1,3 +1,5 @@
+import PaintTile from './PaintTile.js'
+
 class PaintSelector {
 
   currentSelector;
@@ -30,3 +32,6 @@ class PaintSelector {
   }
 
 }
+
+
+export default PaintSelector;

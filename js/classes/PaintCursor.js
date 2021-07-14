@@ -11,3 +11,5 @@ class PaintCursor {
   }
 
 }
+
+export default PaintCursor;
