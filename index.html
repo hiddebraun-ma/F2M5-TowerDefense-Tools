@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Level editor</title>
+    <link rel="stylesheet" href="css/editor.css">
+    <script src="js/classes/Tile.js"></script>
+    <script src="js/classes/Grid.js"></script>
+    <script src="js/classes/Editor.js"></script>
+    <script src="js/classes/PaintTile.js"></script>
+    <script src="js/classes/PaintCursor.js"></script>
+    <script src="js/classes/PaintSelector.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<h2>Level Editor</h2>
+
+<header>
+    <div id="grid-painter">
+        <img src="images/spawnpoint.png" class="paint-tool active" data-state="spawnpoint"/>
+        <img src="images/waypoint.png" class="paint-tool" data-state="waypoint"/>
+        <img src="images/buildable.png" class="paint-tool" data-state="buildable"/>
+        <img src="images/default.png" class="paint-tool" data-state="default"/>
+        <img src="images/path.png" class="paint-tool" data-state="path"/>
+        <img src="images/deselect.png" class="paint-tool" data-state="clear"//>
+    </div>
+    <div>
+    <textarea id="json-input" cols="30" rows="10">
+    {
+    "width": 5,
+    "height": 20,
+    "tiles": [
+        {
+            "state": "waypoint",
+            "index": 0
+        },
+        {
+            "state": "waypoint",
+            "index": 1
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "default"
+        },
+        {
+            "state": "default"
+        },
+        {
+            "state": "default"
+        },
+        {
+            "state": "path"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "spawnpoint"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        },
+        {
+            "state": "buildable"
+        }
+    ]
+}
+</textarea>
+        <br/>
+        <button id="load-button">Load</button>
+    </div>
+    <div>
+    <textarea id="json-output" cols="30" rows="10">
+</textarea>
+        <br/>
+        <button id="save-button">Save</button>
+    </div>
+</header>
+
+<div id="editor">
+
+</div>
+
+</body>
+</html>

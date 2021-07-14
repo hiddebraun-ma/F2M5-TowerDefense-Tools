@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #cdcdcd;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+#editor {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #333;
+}
+
+#editor div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    background-repeat: no-repeat;
+}
+
+.tile:hover {
+    border: 2px solid white;
+}
+
+.state-default {
+    background: #cdcdcd;
+}
+
+.state-buildable {
+    /*background: green;*/
+    background-image: url('../images/buildable.png');
+
+}
+
+.state-waypoint {
+    /*background: blue;*/
+    background-image: url('../images/waypoint.png');
+}
+
+.state-spawnpoint {
+    /*background: red;*/
+    background-image: url('../images/spawnpoint.png');
+}
+
+.state-path {
+    /*background: yellow;*/
+    background-image: url('../images/path.png');
+}
+
+.paint-cursor {
+    position: absolute;
+    display: block;
+    transform-origin: center;
+    width: 127px;
+    height: 127px;
+}
