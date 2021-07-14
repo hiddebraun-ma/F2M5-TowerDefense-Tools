@@ -8,8 +8,13 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     margin-bottom: 20px;
+    grid-gap: 20px;
+}
+
+textarea {
+    width: 100%;
 }
 
 #editor {

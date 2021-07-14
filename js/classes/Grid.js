@@ -38,7 +38,7 @@ class Grid {
 
     console.log(jsonObj)
 
-    return JSON.stringify(jsonObj);
+    return JSON.stringify(jsonObj, null, 4);
 
   }
 
