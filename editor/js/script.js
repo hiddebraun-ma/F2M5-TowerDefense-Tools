@@ -58,7 +58,7 @@ const start = () => {
     outputTextArea.value = '';
 
     const json = grid.toJSON();
-
+    debugger;
     fetch(
       'http://localhost:3001/levels',
       {
