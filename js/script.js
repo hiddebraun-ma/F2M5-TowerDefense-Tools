@@ -46,7 +46,6 @@ const start = () => {
   // Save on button click
   const saveServerButton = document.getElementById('save-server-button');
   saveServerButton.addEventListener('click', () => {
-
     const outputTextArea = document.getElementById('json-output');
     outputTextArea.value = '';
 
