@@ -16,5 +16,3 @@ class PaintTile {
   }
 
 }
-
-export default PaintTile;

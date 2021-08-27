@@ -1,10 +1,3 @@
-import Tile from './classes/Tile.js'
-import Grid from './classes/Grid.js'
-import Editor from './classes/Editor.js'
-import PaintTile from './classes/PaintTile.js'
-import PaintCursor from './classes/PaintCursor.js'
-import PaintSelector from './classes/PaintSelector.js'
-
 const start = () => {
   const paintSelector = new PaintSelector(document.getElementById('grid-painter'));
   const editor = new Editor(document.getElementById('editor'), paintSelector);

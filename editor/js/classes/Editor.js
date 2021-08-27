@@ -1,5 +1,3 @@
-import Tile from './Tile.js'
-
 class Editor {
 
   grid;
@@ -43,5 +41,3 @@ class Editor {
   }
 
 }
-
-export default Editor;
