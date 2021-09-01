@@ -5,7 +5,7 @@ https://robkendal.co.uk/blog/how-to-build-a-restful-node-js-api-server-using-jso
 
 ---
 
-Maak eerst een lege package.json:  
+Maak eerst een lege package.json:
 ```bash
 npm init -y
 ```
